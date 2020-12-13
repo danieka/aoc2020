@@ -1,10 +1,6 @@
 (ns aoc-2020.3-trajectory.core)
 (require '[clojure.string :as str])
 
-(defn flip [f]
-  (fn [& xs]
-    (apply f (reverse xs))))
-
 (defn split-cycle
   [grid]
   (map cycle (str/split grid #"\n")))
