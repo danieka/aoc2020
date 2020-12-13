@@ -1016,8 +1016,7 @@
 (deftest is-valid (is (= (core/is-valid-1 "0" "4" "c" "ccc") true)))
 
 (deftest is-valid-2 (is (= (core/is-valid-2 "1" "3" "a" "abcde") true)))
-(deftest is-valid-2 (is (= (core/is-valid-2 "1" "3" "b" "cdefg") nil)))
-(deftest is-valid-2 (is (= (core/is-valid-2 "2" "9" "c" "cdefg") "ccccccccc")))
+(deftest is-valid-2 (is (= (core/is-valid-2 "1" "3" "b" "cdefg") false)))
 
 (deftest input-1 (is (= (core/sled-rental-checker input1) 500)))
-(deftest input-2 (is (= (core/tobbogan-checker input1) 649)))
+(deftest input-2 (is (= (core/tobbogan-checker input1) 313)))
